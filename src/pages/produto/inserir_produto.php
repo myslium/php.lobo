@@ -11,11 +11,11 @@ if (isset($_POST["inserir"])){
     $quantidade_estoque = $_POST["quantidade_estoque"];
     $cor = $_POST["cor"];
     $disponivel = $_POST["disponivel"];
-        $foto = $_FILES["foto"];
-        $name_foto = $_foto["name"];
-        $tmp_name = $_foto["tmp_name"];
-        $link_imagem = $_POST["link_imagem"];
-        $descrition = 'imagens/produtos' . $nome_foto;
+    $foto = $_FILES["foto"];
+    $name_foto = $_foto["name"];
+    $tmp_name = $_foto["tmp_name"];
+    $link_imagem = $_POST["link_imagem"];
+    $descrition = 'imagens/produtos' . $nome_foto;
 
     if(move_uploaded_file($tmp_name, $descrition)){
         echo "Arquivos enviados co sucesso!"
